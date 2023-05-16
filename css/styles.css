@@ -16,6 +16,7 @@ body{
   gap: 3rem;
   grid-template-areas: "header header header"
   "main main main"
+  "imagen imagen imagen"
   "section section section"
   "footer footer footer";
 }
@@ -55,18 +56,21 @@ main{
   grid-area: main;
   background-color: white;
 }
-main .textArea{
-  position: absolute;
-  width: 33%;
-  height: 586px;
-  left: 1100px;
-  top: 475px;
-  color: white;
-  text-align: center;
+
+.imagenPrincipal{
+  grid-area: imagen;
+  height: auto;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+
+  grid-template-areas: "img texto" ;
 
 }
 .auris{
-  width: 100%;
+  grid-area: img;
+}
+.texTarea{
+  grid-area: texto;
 }
 main .textArea h2{
   top: 25px;
@@ -118,4 +122,8 @@ footer img{
 .footNav{
   text-align: center;
   word-spacing: 50px;
+}
+
+a{
+  color: black;
 }
