@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: orangered;
+}
+
+.grilla{
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 3rem;
+  grid-template-areas: "header header header"
+  "main main main"
+  "section section section"
+  "footer footer footer";
+}
+
+header{
+  grid-area: header;
+  background-color: black;
+  width: 100%;
+}
+header .titulo{
+  color: white;
+  font-family: "montserrat";
+  font-size: 64px;
+  text-align: center;
+
+}
+.logo{
+  width: 90px;
+}
+nav{
+  display: flex;
+}
+nav ul{
+  text-align: center;
+  font-family: "hp simplified";
+  font-size: 24px;
+  word-spacing: 50px;
+}
+nav button{
+  width: 100px;
+  border-radius: 10px;
+  border-color: orangered;
+  background-color: orangered;
+  right: 30px;
+}
+main{
+  grid-area: main;
+  background-color: white;
+}
+main .textArea{
+  position: absolute;
+  width: 33%;
+  height: 586px;
+  left: 1100px;
+  top: 475px;
+  color: white;
+  text-align: center;
+
+}
+.auris{
+  width: 100%;
+}
+main .textArea h2{
+  top: 25px;
+}
+
+section{
+  grid-area: section;
+  background-color: #D9D9D9;
+}
+
+section h3{
+  text-align: center;
+  font-family: "montserrat";
+  font-size: 64px;
+  text-decoration: underline;
+}
+.auricular {
+  width: 33%;
+
+}
+.microfono{
+  width: 33%;
+}
+.tocadiscos{
+    width: 33%;
+}
+footer{
+  grid-area: footer;
+  background-color: black;
+}
+footer p{
+  color: white;
+  font-size: 18px;
+  text-align: justify;
+  font-family: "hp simplified"
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: "hp simplified";
+  
+}
+footer img{
+  width: 90px;
+  left: 30px;
+}
+.footNav{
+  text-align: center;
+  word-spacing: 50px;
+}
