@@ -10,13 +10,13 @@ body{
 .grilla{
   display: grid;
   height: 100vh;
-  grid-template-rows: 1fr 1fr 1fr 2fr 2fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr;
 
   gap: 3rem;
-  grid-template-areas: "header header header"
+  grid-template-areas: 
+  "header header header"
   "main main main"
-  "imagen imagen imagen"
   "section section section"
   "footer footer footer";
 }
@@ -24,20 +24,32 @@ body{
 header{
   grid-area: header;
   background-color: black;
+  height: 100px;
   width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 header .titulo{
   color: white;
   font-family: "montserrat";
   font-size: 64px;
   text-align: center;
-
+  
 }
-.logo{
-  width: 90px;
+header .cajalogo{
+  background-color: white;
+}
+header .logo{
+  position:absolute;
+  width: 80px;
+  top: 10px;
+  left: 20px;
 }
 nav{
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav ul{
   text-align: center;
@@ -46,31 +58,42 @@ nav ul{
   word-spacing: 50px;
 }
 nav button{
-  width: 100px;
-  border-radius: 10px;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  border-radius: 25px;
   border-color: orangered;
   background-color: orangered;
   right: 30px;
+  text-align: justify;
+  margin-left: 20px;
 }
 main{
   grid-area: main;
   background-color: white;
 }
 
-.imagenPrincipal{
-  grid-area: imagen;
+.imagenPrincipal {
+  display:grid;
   height: auto;
   grid-template-rows: 1fr;
   grid-template-columns: 2fr 1fr;
-
-  grid-template-areas: "img texto" ;
-
+  grid-template-areas: "img texto";
+  background-color: black;
 }
+
 .auris{
   grid-area: img;
 }
-.texTarea{
+.textArea{
   grid-area: texto;
+  background-color: black;
+  width: auto;
+  color: white;
+
+}
+.textArea br{
+  color: white;
 }
 main .textArea h2{
   top: 25px;
