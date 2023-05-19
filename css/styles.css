@@ -58,7 +58,7 @@ nav ul{
   word-spacing: 50px;
 }
 nav button{
-  position: absolute;
+  position: flex;
   width: 250px;
   height: 30px;
   border-radius: 25px;
@@ -67,6 +67,8 @@ nav button{
   right: 30px;
   text-align: justify;
   margin-left: 20px;
+  border: none;
+  ;
 }
 main{
   grid-area: main;
