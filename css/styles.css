@@ -9,9 +9,9 @@ body{
 
 .grilla{
   display: grid;
-  height: 100vh;
-  grid-template-rows: 1fr 1fr 1fr 2fr;
-  grid-template-columns: 1fr;
+  width: 100%;
+  grid-template-rows: repeat(4 auto);
+
 
   gap: 3rem;
   grid-template-areas: 
@@ -121,22 +121,7 @@ section h3{
   font-size: 64px;
   text-decoration: underline;
 }
-.catalogo{
-  display: flex;
-  justify-content: space-between;
-  padding: 30px ;
-}
 
-.auricular {
-  width: 20%;
-
-}
-.microfono{
-  width: 20%;
-}
-.tocadiscos{
-    width: 20%;
-}
 footer{
   grid-area: footer;
   background-color: black;
@@ -172,6 +157,35 @@ a{
   display:flex;
   width: 75%; 
 }
-.game{
+
+.container{
+  width: 100%;
   display: flex;
+  max-width: 1100px;
+}
+.card{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #D9D9D9;
+  cursor: default;
+  transition: all 400ms ease;
+
+}
+.card:hover{
+  transform: translateY(-3%);
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 800px) {
+  .imagenPrincipal{
+    width: 100%;
+  }
+  .textArea{
+    width: 100%;
+  }
+  
 }
