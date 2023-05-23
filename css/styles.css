@@ -189,16 +189,16 @@ a{
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 436px) {
-  .imagenPrincipal{
-    width: 100%;
-  }
-  .textArea{
-    width: 100%;
-  }
-  
-}
 .socialIcons {
+  margin: 0 0 40px 0;
   color: white;
   display: flex;
+}
+@media (max-width: 800px) {
+  .imagenPrincipal{
+ grid-template-rows: 1fr 1fr;
+ grid-template-columns: 1fr;
+ grid-template-areas: "img"
+ "texto";
+  }
 }
