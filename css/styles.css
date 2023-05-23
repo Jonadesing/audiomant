@@ -116,6 +116,8 @@ main .textArea h2{
 }
 
 section{
+  width: auto;
+  height: auto;
   grid-area: section;
   background-color: #D9D9D9;
 }
@@ -130,6 +132,8 @@ section h3{
 footer{
   grid-area: footer;
   background-color: black;
+  width: auto;
+  height: auto;
 }
 footer p{
   color: white;
