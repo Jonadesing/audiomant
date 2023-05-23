@@ -75,18 +75,20 @@ main{
   background-color: white;
 }
 
-.imagenCentral {
+.imagenPrincipal {
   display:grid;
-  height: auto;
+  width: auto;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "img" "texto";
+  grid-template-areas: "img texto";
   background-color: black;
 }
 
-.imagenPrincipal{
+.imagenCentral{
   grid-area: img;
   width: auto;
+  height: auto;
+
 }
 .textArea{
   grid-area: texto;
@@ -163,10 +165,6 @@ footer .logo{
 a{
   color: black;
 }
-.imagenCentral{
-  display:flex;
-  width: 75%; 
-}
 
 .container{
   width: 100%;
@@ -191,9 +189,12 @@ a{
   height: auto;
 }
 .socialIcons {
-  margin: 0 0 40px 0;
   color: white;
   display: flex;
+  justify-content: right;
+  font-size: 35px;
+  padding: auto;
+  
 }
 @media (max-width: 800px) {
   .imagenPrincipal{
@@ -201,5 +202,6 @@ a{
  grid-template-columns: 1fr;
  grid-template-areas: "img"
  "texto";
+ font-size: medium;
   }
 }
