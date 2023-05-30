@@ -1,0 +1,26 @@
+main{
+    grid-area: main;
+    background-color:$color-main;
+
+    .imagenPrincipal {
+        display:grid;
+        width: auto;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "img texto";
+        background-color:$color-banner;
+        .imagenCentral{
+            grid-area: img;
+            width: auto;
+            height: auto;
+            }
+            .textArea{
+                grid-area: texto;
+                background-color:$color-banner;
+                width: auto;
+                color:$color-h;
+                padding-top: 75px;
+                padding: 50px;
+            }
+    }
+}

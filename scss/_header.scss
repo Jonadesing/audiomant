@@ -1,0 +1,60 @@
+header{
+    grid-area: header;
+    background-color:$color-banner;
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    padding: 10px;
+
+    .titulo{
+        display: flex;
+        font-size: 64px;
+        color: $color-h;
+        justify-content: center;
+        font-family: $font-h;
+    }
+    .logo{
+        padding: auto;
+        height: 80px;
+        }
+}
+
+
+nav{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: white;
+        word-spacing: 50px;
+        justify-content: center;
+
+    ul{
+
+        .enlace{
+            text-align: center;
+            a{
+                color:black;
+            }
+        }
+    }
+
+    .search{
+        display: flex;
+
+    }
+}
+
+button{
+        position: flex;
+        width: 250px;
+        height: 30px;
+        border-radius: 25px;
+        background-color:$color-fondo;
+        right: 30px;
+        text-align: center;
+        margin-left: 20px;
+        border: none;
+            }

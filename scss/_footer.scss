@@ -1,0 +1,34 @@
+footer{
+    grid-area: footer;
+    background-color: $color-banner;
+    width: auto;
+    height: auto;
+    p{
+        color: $color-h;
+        font-size: 18px;
+        text-align: justify;
+        font-family: $font-body;
+        margin-left: 10px;
+    }
+    a {
+        color: $color-h;
+        margin-left: 10px;
+    }
+
+    .logo{
+    margin: 10px;
+    width: 80px;
+        }
+    }
+    .footNav{
+        text-align: center;
+        word-spacing: 50px;
+        a{
+            color:$color-h
+        }
+    }
+    i{
+        font-size: x-large;
+        color:$color-i;
+        margin: 10px;
+    }
