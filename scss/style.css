@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -41,15 +42,22 @@ header .logo {
 
 nav {
   display: flex;
+  align-items: center; /* Alineación vertical al centro */
+  justify-content: center; /* Alineación horizontal al centro */
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   background-color: white;
-  word-spacing: 50px;
-  justify-content: center;
+}
+nav ul {
+  display: flex; /* Alineación de los elementos de la lista en línea */
+  list-style: none; /* Eliminar los puntos de la lista */
+  padding: 0;
+  margin: 0;
 }
 nav ul .enlace {
   text-align: center;
+  margin: 0 25px; /* Espaciado horizontal entre elementos de la lista */
 }
 nav ul .enlace a {
   color: black;
@@ -78,7 +86,7 @@ main .imagenPrincipal {
   display: grid;
   width: auto;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "img texto";
   background-color: black;
 }
@@ -94,6 +102,46 @@ main .imagenPrincipal .textArea {
   color: white;
   padding-top: 75px;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .imagenPrincipal .textArea h2 {
+  color: white;
+  font-size: xxx-large;
+  text-align: center;
+}
+main .imagenPrincipal .textArea p {
+  font-size: larger;
+  text-align: justify;
+}
+@media (max-width: 800px) {
+  main .imagenPrincipal .textArea {
+    grid-area: img;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 75px;
+  }
+  main .imagenPrincipal .textArea h2,
+  main .imagenPrincipal .textArea p {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  main .imagenPrincipal .textArea {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+  }
+  main .imagenPrincipal .textArea h2,
+  main .imagenPrincipal .textArea p {
+    text-align: center;
+    margin: 10px;
+  }
 }
 
 section {
@@ -158,8 +206,12 @@ footer .logo {
 }
 
 .footNav {
+  display: flex;
+  align-items: center; /* Alineación vertical al centro */
+  justify-content: center; /* Alineación horizontal al centro */
   text-align: center;
   word-spacing: 50px;
+  list-style: none;
 }
 .footNav a {
   color: white;
@@ -167,6 +219,6 @@ footer .logo {
 
 i {
   font-size: x-large;
-  color: rgba(255, 255, 255, 0.863);
+  color: white;
   margin: 10px;
 }/*# sourceMappingURL=style.css.map */

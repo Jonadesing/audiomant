@@ -21,8 +21,12 @@ footer{
         }
     }
     .footNav{
+        display: flex;
+        align-items: center; /* Alineación vertical al centro */
+        justify-content: center; /* Alineación horizontal al centro */
         text-align: center;
         word-spacing: 50px;
+        list-style: none;
         a{
             color:$color-h
         }

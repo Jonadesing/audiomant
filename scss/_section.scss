@@ -11,6 +11,7 @@ section{
     font-family: "montserrat";
     font-size: 64px;
     text-decoration: underline;
+    background-color: $color-h;
   }
   .container{
     width: 100%;
@@ -34,4 +35,12 @@ section{
   .card img{
     width: 75%;
     height: auto;
+  }
+  h4{
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+    font-size: x-large;
+    color: black;
+
   }

@@ -1,12 +1,12 @@
 main{
     grid-area: main;
-    background-color:$color-main;
+    background-color: white;
 
     .imagenPrincipal {
         display:grid;
         width: auto;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: "img texto";
         background-color:$color-banner;
         .imagenCentral{
@@ -14,13 +14,55 @@ main{
             width: auto;
             height: auto;
             }
-            .textArea{
-                grid-area: texto;
-                background-color:$color-banner;
-                width: auto;
-                color:$color-h;
-                padding-top: 75px;
-                padding: 50px;
-            }
+            .textArea {
+  grid-area: texto;
+  background-color: black;
+  width: auto;
+  color: white;
+  padding-top: 75px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: white;
+    font-size: xxx-large;
+    text-align: center;
+  }
+
+  p {
+    font-size: larger;
+    text-align: justify;
+  }
+
+  @media (max-width: 800px) {
+    grid-area: img;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 75px;
+
+    h2,
+    p {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+
+    h2,
+    p {
+      text-align: center;
+      margin: 10px;
+    }
+  }
+}
     }
 }
