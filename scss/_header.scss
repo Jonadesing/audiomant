@@ -4,7 +4,7 @@ header {
     grid-area: header;
     background-color: $color-banner;
     height: auto;
-    width: auto;
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: center;
@@ -28,6 +28,7 @@ header {
     display: flex;
     align-items: center; /* Alineación vertical al centro */
     justify-content: center; /* Alineación horizontal al centro */
+    width: 100vw;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -62,5 +63,6 @@ header {
     right: 30px;
     text-align: center;
     margin-left: 20px;
+    margin-bottom: 10px;
     border: none;
   }

@@ -4,7 +4,7 @@ main{
 
     .imagenPrincipal {
         display:grid;
-        width: auto;
+        width: 100vw;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "img texto";
