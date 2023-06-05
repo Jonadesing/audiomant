@@ -202,3 +202,10 @@ i {
   font-size: x-large;
   color: white;
   margin: 10px; }
+
+.carousel-inner {
+  width: auto;
+  height: min-content; }
+
+.gaming {
+  width: 100vw; }
