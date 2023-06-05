@@ -85,12 +85,12 @@ main {
     background-color: black; }
     main .imagenPrincipal .imagenCentral {
       grid-area: img;
-      width: auto;
+      width: 66vw;
       height: auto; }
     main .imagenPrincipal .textArea {
       grid-area: texto;
       background-color: black;
-      width: auto;
+      width: 33vw;
       color: white;
       padding-top: 75px;
       padding: 50px;
@@ -105,7 +105,7 @@ main {
       main .imagenPrincipal .textArea p {
         font-size: larger;
         text-align: justify; }
-      @media (max-width: 800px) {
+      @media (max-width: 576px) {
         main .imagenPrincipal .textArea {
           grid-area: img;
           flex-direction: column;
@@ -115,7 +115,7 @@ main {
           main .imagenPrincipal .textArea h2,
           main .imagenPrincipal .textArea p {
             text-align: center; } }
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
         main .imagenPrincipal .textArea {
           flex-direction: row;
           justify-content: center;
