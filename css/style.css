@@ -13,53 +13,7 @@ body {
   width: 100vw;
   grid-template-rows: repeat(4 auto);
   gap: 3rem;
-  grid-template-areas: "header" "main" "section" "footer"; }
-
-header {
-  grid-area: header;
-  background-color: black;
-  height: auto;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  justify-content: center;
-  padding: 10px; }
-  header .titulo {
-    display: flex;
-    font-size: 64px;
-    color: white;
-    justify-content: center;
-    font-family: "montserrat"; }
-  header .logo {
-    padding: auto;
-    height: 80px; }
-
-nav {
-  display: flex;
-  align-items: center;
-  /* Alineación vertical al centro */
-  justify-content: center;
-  /* Alineación horizontal al centro */
-  width: 100vw;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: white; }
-  nav ul {
-    display: flex;
-    /* Alineación de los elementos de la lista en línea */
-    list-style: none;
-    /* Eliminar los puntos de la lista */
-    padding: 0;
-    margin: 0; }
-    nav ul .enlace {
-      text-align: center;
-      margin: 0 25px;
-      /* Espaciado horizontal entre elementos de la lista */ }
-      nav ul .enlace a {
-        color: black; }
-  nav .search {
-    display: flex; }
+  grid-template-areas: "header" "nav" "main" "section" "footer"; }
 
 button {
   position: flex;
