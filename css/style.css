@@ -14,8 +14,11 @@
   grid-template-areas: "header" "nav" "main" "section" "footer"; }
 
 .header_cabecera {
-  background-color: black; }
+  background-color: black;
+  display: flex;
+  align-items: center; }
   .header_cabecera .cajaLogo {
+    display: inline-block;
     background-color: white;
     width: 80px;
     height: 80px;
@@ -29,7 +32,7 @@
     padding: auto;
     flex-direction: column; }
   .header_cabecera .titulo {
-    display: flex;
+    display: inline-block;
     color: white;
     justify-content: center;
     align-items: center;
@@ -37,6 +40,8 @@
     font-size: 64px; }
   .header_cabecera .nav_bar {
     display: flex;
+    width: auto;
+    word-spacing: 50px;
     align-items: center;
     color: white;
     background-color: white;
@@ -49,16 +54,10 @@
       /* Alineación horizontal al centro */
       text-align: center;
       word-spacing: 50px;
-      list-style: none; }
+      list-style: none;
+      color: black; }
     .header_cabecera .nav_bar .enlace {
-      display: flex;
-      align-items: center;
-      /* Alineación vertical al centro */
-      justify-content: center;
-      /* Alineación horizontal al centro */
-      text-align: center;
-      word-spacing: 50px;
-      list-style: none; }
+      color: black; }
     .header_cabecera .nav_bar .search button {
       position: flex;
       width: 250px;

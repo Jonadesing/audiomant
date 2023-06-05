@@ -1,8 +1,11 @@
 .header_cabecera {
   background-color: $color-banner;
+  display: flex;
+  align-items: center;
   // Estilos para el encabezado
 
   .cajaLogo {
+    display: inline-block;
     background-color: $color-h;
     width: 80px;
     height: 80px;
@@ -22,7 +25,7 @@
   }
 
   .titulo {
-    display: flex;
+    display: inline-block;
     color:$color-h;
     justify-content: center;
     align-items: center;
@@ -34,6 +37,8 @@
 
   .nav_bar {
     display:flex;
+    width: auto;
+    word-spacing: 50px;
     align-items: center;
     color: $color-h;
     background-color: $color-h;
@@ -48,6 +53,7 @@
       text-align: center;
       word-spacing: 50px;
       list-style: none;
+      color: $color-p;
       // Estilos para la lista de elementos de navegación
     }
     a{
@@ -57,12 +63,7 @@
     }
 
     .enlace {
-      display: flex;
-      align-items: center; /* Alineación vertical al centro */
-      justify-content: center; /* Alineación horizontal al centro */
-      text-align: center;
-      word-spacing: 50px;
-      list-style: none;
+      color: black;
       // Estilos para los enlaces de navegación
     }
 
