@@ -15,31 +15,43 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="grilla">
-        <header>
-            <!-- Comentario: Encabezado -->
+<body class="grilla">
+    <!-- Encabezado -->
+    <header class="header_cabecera">
+        <div class="caja1">
             <div class="cajaLogo">
-            <a href="../index.html"><img class= "logo" src="../archivos.img/logo.png" alt="logo"></a>
+                <a href="../index.html"><img class= "logo" src="../archivos.img/logo.png" alt="logo"></a>
             </div>
             <h1 class="titulo">AUDIOMANT</h1>
-        </header>
-        <main>
-            <nav>
+            <div></div>
+            </div>
+            <!-- Navegación -->
+            <nav class="nav_bar">
                 <ul>
-                    <!-- Comentario: Menú de navegación -->
-                    <li class="enlace inicio"><a href="../index.html">Inicio</a></li>
-                    <li class="enlace Productos"><a href="./productos.html">Productos</a></li>
-                    <li class="enlace Servicios"><a href="./servicios.html">Servicios</a></li>
-                    <li class="enlace Nosotros"><a href="./nosotros.html">Nosotros</a></li>
-                    <li class="enlace Contactos"><a href="./contactos.html">Contactos</a></li>
+                    <!-- Enlaces de navegación -->
+                    <li class="enlace"><a href="../index.html">Inicio</a></li>
+                    <li class="enlace"><a href="../pages/productos.html">Productos</a></li>
+                    <li class="enlace"><a href="../pages/servicios.html">Servicios</a></li>
+                    <li class="enlace"><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="enlace"><a href="../pages/contactos.html">Contactos</a></li>
                 </ul>
-                <button>Buscar...</button>
+                <div class="menu-btn">
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                </div>
+                    <!-- Búsqueda -->
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                        <button>Buscar</button>
+                </div>
             </nav>
-        </main>
-        <img class="imagenCentral" src="../archivos.img/AT2040_lifestyle_banner_desktop_01-2000x1000.jpg" alt="imagen">
-    <section>
+    </header>
+    <main>
         <!-- Comentario: Sección principal -->
+        <img class="imagenCentral" src="../archivos.img/AT2040_lifestyle_banner_desktop_01-2000x1000.jpg" alt="imagen">
+    </main>
+    <section>
     </section>
     <aside>
         <!-- Comentario: Barra lateral -->

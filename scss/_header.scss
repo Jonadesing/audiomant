@@ -1,31 +1,31 @@
-.header_cabecera {
-  background-color: $color-banner;
-  display: flex;
-  align-items: center;
+  .caja1{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: space-between;
+    background-color: $color-banner;
+  }
   // Estilos para el encabezado
 
   .cajaLogo {
-    display: inline-block;
     background-color: $color-h;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-left: 10px;
     align-items: center;
-    padding: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     // Estilos para el contenedor del logo
   }
 
   .logo {
-    display: flex;
+
     width: 80px;
-    padding: auto;
-    flex-direction: column;
     // Estilos para el logo
   }
 
   .titulo {
-    display: inline-block;
+    display: flex;
     color:$color-h;
     justify-content: center;
     align-items: center;
@@ -36,35 +36,41 @@
   }
 
   .nav_bar {
-    display:flex;
-    width: auto;
-    word-spacing: 50px;
-    align-items: center;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: ". mmenu busqueda";
+    align-content: center;
+    justify-content: center;
     color: $color-h;
     background-color: $color-h;
-    justify-content: center;
+    padding: 1rem 0;
 
     // Estilos para la barra de navegación
 
     ul {
+      grid-area : mmenu;
       display: flex;
       align-items: center; /* Alineación vertical al centro */
       justify-content: center; /* Alineación horizontal al centro */
-      text-align: center;
       word-spacing: 50px;
       list-style: none;
-      color: $color-p;
+      margin: 0px;
       // Estilos para la lista de elementos de navegación
-    }
-    a{
-
-      // Estilos para los 
-
     }
 
     .enlace {
+
       color: black;
       // Estilos para los enlaces de navegación
+
+      a{
+        color: black;
+        margin: 10px;
+
+        &:visited{
+          color: black;
+        }
+      }
     }
 
     .menu-btn {
@@ -75,6 +81,9 @@
     }
 
     .search {
+      grid-area: busqueda;
+      display: flex;
+      align-items: center;
       // Estilos para la búsqueda
       i {
         // Estilos para el icono de búsqueda
@@ -92,6 +101,86 @@
         margin-bottom: 10px;
         border: none;
         // Estilos para el botón de búsqueda
+      }
+    }
+  }
+  $header-height: 60px;
+
+header {
+  .nav_bar {
+    // Estilos para pantallas grandes
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-right: 20px;
+
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+
+    // Estilos para pantallas pequeñas
+    @media (max-width: 800px) {
+      ul {
+        display: none;
+      }
+
+      .menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        margin-left: 30px;
+        align-items: center;
+        cursor: pointer;
+
+        &__line {
+          width: 100%;
+          height: 2px;
+          background-color: #000;
+          transition: background-color 0.3s;
+        }
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+
+        i {
+          margin-right: 5px;
+        }
+
+        button {
+          padding: 5px 10px;
+        }
+      }
+
+      &.expanded {
+        ul {
+          display: block;
+        }
+
+        .menu-btn__line {
+          background-color: transparent;
+        }
+
+        .blurred-background {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 999;
+          backdrop-filter: blur(5px);
+        }
       }
     }
   }

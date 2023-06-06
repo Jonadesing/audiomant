@@ -15,24 +15,38 @@
 
     <title>Document</title>
 </head>
-<body>
-    <div class="grilla">
-        <header>
+<body class="grilla">
+    <!-- Encabezado -->
+    <header class="header_cabecera">
+        <div class="caja1">
             <div class="cajaLogo">
-                <a href="../index.html"><img class="logo" src="../archivos.img/logo.png" alt="logo"></a>
+                <a href="../index.html"><img class= "logo" src="../archivos.img/logo.png" alt="logo"></a>
             </div>
             <h1 class="titulo">AUDIOMANT</h1>
-            <nav>
+            <div></div>
+            </div>
+            <!-- Navegación -->
+            <nav class="nav_bar">
                 <ul>
-                    <li class="enlace inicio"><a href="../index.html">Inicio</a></li>
-                    <li class="enlace Productos"><a href="./productos.html">Productos</a></li>
-                    <li class="enlace Servicios"><a href="./servicios.html">Servicios</a></li>
-                    <li class="enlace Nosotros"><a href="./nosotros.html">Nosotros</a></li>
-                    <li class="enlace Contactos"><a href="./contactos.html">Contactos</a></li>
+                    <!-- Enlaces de navegación -->
+                    <li class="enlace"><a href="../index.html">Inicio</a></li>
+                    <li class="enlace"><a href="../pages/productos.html">Productos</a></li>
+                    <li class="enlace"><a href="../pages/servicios.html">Servicios</a></li>
+                    <li class="enlace"><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="enlace"><a href="../pages/contactos.html">Contactos</a></li>
                 </ul>
-                <button>Buscar...</button>
+                <div class="menu-btn">
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                </div>
+                    <!-- Búsqueda -->
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                        <button>Buscar</button>
+                </div>
             </nav>
-        </header>
+    </header>
 
         <main>
             <!-- Imagen principal -->
