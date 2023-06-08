@@ -24,37 +24,37 @@
         <div></div>
       </div>
         <!-- Navegación -->
-      <nav class="nav_bar">
-        <ul>
-          <!-- Enlaces de navegación -->
-          <li class="enlace"><a href="index.html">Inicio</a></li>
-          <li class="enlace"><a href="./pages/productos.html">Productos</a></li>
-          <li class="enlace"><a href="./pages/servicios.html">Servicios</a></li>
-          <li class="enlace"><a href="./pages/nosotros.html">Nosotros</a></li>
-          <li class="enlace"><a href="./pages/contactos.html">Contactos</a></li>
-        </ul>
-        <div class="menu-btn">
-          <span class="menu-btn__line"></span>
-          <span class="menu-btn__line"></span>
-          <span class="menu-btn__line"></span>
-        </div>
-        <!-- Búsqueda -->
-        <div class="search">
-          <i class='bx bx-search'></i>
-          <button>Buscar</button>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav_bar">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="./index.html">Inicio<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Inicio</a>
+              <a class="nav-item nav-link" href="#">Productos</a>
+              <a class="nav-item nav-link" href="#">Servicios</a>
+              <a class="nav-item nav-link" href="#">Nosotros</a>
+            </div>
+          </div>
+        </nav>
+
     </header>
-    <main class="main_central">
+    <main>
       <!-- Contenido principal -->
-      <!-- Imagen principal -->
       <div class="imagenPrincipal">
-        <img class="imagenCentral" src="./archivos.img/auriculares.png" alt="auriculares">
+        <!-- Imagen principal -->
+        <div class="imagenCentral">
+          <img class="imagen" src="./archivos.img/auriculares.png" alt="auriculares">
+        </div>
+        <!-- Area de Texto -->
         <div class="textArea">
           <h2>Videojuegos de Alta Fidelidad</h2>  
           <p>Tome el control de su experiencia de juego y llévela a cotas más altas. Nuestros audífonos ofrecen una impresionante calidad de sonido, comodidad y durabilidad, junto con micrófonos de última generación para una comunicación cristalina dentro del juego</p>
         </div>
       </div>
+
     </main>
     <!-- Sección de productos recomendados -->
     <section class="section_recomendados">
@@ -120,7 +120,6 @@
         <i class='bx bxl-instagram'></i>
       </div>
     </footer>
-
   <!-- Scripts de JavaScript -->
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

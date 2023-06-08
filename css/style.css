@@ -82,55 +82,6 @@
       margin-bottom: 10px;
       border: none; }
 
-header .nav_bar ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  header .nav_bar ul li {
-    margin-right: 20px; }
-    header .nav_bar ul li a {
-      color: #000;
-      text-decoration: none; }
-
-@media (max-width: 800px) {
-  header .nav_bar ul {
-    display: none; }
-  header .nav_bar .menu-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    margin-left: 30px;
-    align-items: center;
-    cursor: pointer; }
-    header .nav_bar .menu-btn__line {
-      width: 100%;
-      height: 2px;
-      background-color: #000;
-      transition: background-color 0.3s; }
-  header .nav_bar .search {
-    display: flex;
-    align-items: center; }
-    header .nav_bar .search i {
-      margin-right: 5px; }
-    header .nav_bar .search button {
-      padding: 5px 10px; }
-  header .nav_bar.expanded ul {
-    display: block; }
-  header .nav_bar.expanded .menu-btn__line {
-    background-color: transparent; }
-  header .nav_bar.expanded .blurred-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    backdrop-filter: blur(5px); } }
-
 main {
   grid-area: main;
   background-color: white; }
