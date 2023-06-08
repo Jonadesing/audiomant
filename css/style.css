@@ -45,7 +45,7 @@
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas: ". mmenu busqueda";
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
   background-color: white;
   padding: 1rem 0; }
@@ -72,7 +72,7 @@
     align-items: center; }
     .nav_bar .search button {
       position: flex;
-      width: 250px;
+      width: 200px;
       height: 30px;
       border-radius: 25px;
       background-color: #ff6f00;
@@ -102,7 +102,6 @@ main {
       width: 33vw;
       color: white;
       padding-top: 75px;
-      padding: 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
