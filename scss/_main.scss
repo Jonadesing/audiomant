@@ -1,68 +1,46 @@
-main{
-    grid-area: main;
-    background-color: white;
+.imagenCentral{
 
-    .imagenPrincipal {
-        display:grid;
-        width: 100vw;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "img texto";
-        background-color:$color-banner;
-        .imagenCentral{
-            grid-area: img;
-            width: 66vw;
-            height: auto;
-            }
-            .textArea {
-  grid-area: texto;
-  background-color: black;
-  width: 33vw;
-  color: white;
-  padding-top: 75px;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-  h2 {
-    color: white;
-    font-size: xxx-large;
-    text-align: center;
-  }
 
-  p {
-    font-size: larger;
-    text-align: justify;
-  }
-
-  @media (max-width: 576px) {
-    grid-area: img;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0;
-    padding-bottom: 75px;
-
-    h2,
-    p {
-      text-align: center;
+    .textArea{
+        background-color: $color-banner;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        
     }
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    padding: 0;
-
-    h2,
-    p {
-      text-align: center;
-      margin: 10px;
-    }
-  }
 }
+
+.lista{
+    color:$color-h;
+    list-style:none;
+    background-color: $color-banner;
+
+    font-size: $p-size;
+
+
+
+    
+
+    .tituloLista{
+        margin-top: 3em;
     }
+
+
+    li{
+        margin: auto;
+        font-size: $h3-size;
+        text-align:justify;
+        align-items: center;
+
+    }
+    a{
+        color:$color-h;
+    }
+
+
+}
+.anuncio{
+    background-color: $color-banner;
+    color:$color-h;
 }

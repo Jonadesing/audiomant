@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripción" content="¿Buscas calidad excepcional en productos y servicios de audio profesional? Explora nuestra tienda online con auriculares, micrófonos, monitores de audio y tocadiscos de la reconocida marca AUDIOTECHNICA. Además, te ofrecemos servicios de sonido e iluminación profesional para fiestas, eventos y recitales. Déjate sorprender por nuestra oferta y aprovecha la experiencia de nuestros expertos.">
+    <meta name="keywords" content=""
     <!-- Enlaces a estilos externos -->
+    <link rel="icon" type="favicon" href="../archivos.img/logo.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     
     <!-- Meta etiquetas -->
-    <title>Document</title>
+    <title>Audiomant-Servicios</title>
     <meta name="description" content="Descripción de la página">
     <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
 
@@ -26,34 +29,90 @@
             <div></div>
             </div>
             <!-- Navegación -->
-            <nav class="nav_bar">
-                <ul>
-                    <!-- Enlaces de navegación -->
-                    <li class="enlace"><a href="../index.html">Inicio</a></li>
-                    <li class="enlace"><a href="../pages/productos.html">Productos</a></li>
-                    <li class="enlace"><a href="../pages/servicios.html">Servicios</a></li>
-                    <li class="enlace"><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li class="enlace"><a href="../pages/contactos.html">Contactos</a></li>
-                </ul>
-                <div class="menu-btn">
-                    <span class="menu-btn__line"></span>
-                    <span class="menu-btn__line"></span>
-                    <span class="menu-btn__line"></span>
-                </div>
-                    <!-- Búsqueda -->
-                <div class="search">
-                    <i class='bx bx-search'></i>
-                        <button>Buscar</button>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../pages/productos.html">Productos</a>
+                                <a class="dropdown-item" href="#">Auriculares</a>
+                                <a class="dropdown-item" href="#">Tocadiscos</a>
+                                <a class="dropdown-item" href="#">Microfonos</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./pages/contactos.html">Contactos</a>
+                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0 " type="submit">Search</button>
+                    </form>
                 </div>
             </nav>
     </header>
     
     <main>
-        
+        <div class="row no-gutters">
+            <div id="carouselExampleCaptions" class="carousel slide col-lg-8" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="img-fluid" src="../archivos.img/Mycarrousel3.jpg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>"Experiencias memorables con sonido e iluminación de primera calidad".</h3>
+                      <p>Desde notas musicales hasta destellos de luz, nuestro objetivo es envolver cada evento en una atmósfera cautivadora que despierte los sentidos y genere momentos memorables.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../archivos.img/MyCarrousel2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>"Descubre una experiencia auditiva excepcional con estilo y confort"</h3>
+                      <p>"El sonido y la iluminación son los ingredientes mágicos que transforman un evento en una experiencia sensorial inolvidable."</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../archivos.img/MyCarrousel.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>"Calidad superior para tus oídos"</h3>
+                      <p>El arte del sonido y la iluminación se entrelaza para crear emociones y ambientes únicos que cautivan a cada asistente en cada evento.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>     
+            <div class="col-lg-4 text-light container-fluid anuncio">
+                <h2>Servicios de primera calidad</h2>
+                <p>Somos una empresa especializada en servicios de sonido e iluminación para eventos. Ofrecemos soluciones de alta calidad que transforman cualquier ocasión en una experiencia memorable. Nuestro equipo de profesionales altamente capacitados y apasionados, se adaptán a las necesidades y preferencias de nuestros clientes. Contamos con equipos de última generación que garantizan un sonido claro y potente, así como opciones de iluminación creativa que crean ambientes únicos y cautivadores.</p>
+            </div>
     </main>
-    <section>
-        <img class="imagenCentral" src="../archivos.img/WP-Numark-NS4FX-Lifestyle-1024x420.jpg" alt="fiesta">
-    </section>
     <footer>
         <ul class="footNav">
             <li class="enlace inicio"><a href="../index.html">Inicio</a></li>
@@ -67,13 +126,12 @@
         <a href="mailto:info@audiomant.com.ar">info@audiomant.com.ar</a><br>
         <a href="tel:+54 11 5451 5694">tel:+54 11 5451 5694</a></p>
         <div class="socialIcons">
-            <i class='bx bx-envelope'></i>
-            <i class='bx bxl-whatsapp'></i>
-            <i class='bx bxl-facebook'></i>
-            <i class='bx bxl-instagram'></i>
+            <a href="mailto:info@audiomant.com.ar"><i class='bx bx-envelope'></i></a>
+            <a href="http://wa.me/+542227464498"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="https://www.facebook.com/Audiomantvivoyhomestudio"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/audiomant.ok/"><i class='bx bxl-instagram' ></i></a>
         </div>
     </footer>
-    
     <!-- Enlaces a scripts externos -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

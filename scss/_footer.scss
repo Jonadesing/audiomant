@@ -1,11 +1,11 @@
 footer{
     grid-area: footer;
     background-color: $color-banner;
-    width: 100vw;
+    width: auto;
     height: auto;
     p{
         color: $color-h;
-        font-size: 18px;
+        font-size:$p-size;
         text-align: justify;
         font-family: $font-body;
         margin-left: 10px;

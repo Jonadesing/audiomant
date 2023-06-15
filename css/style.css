@@ -38,7 +38,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Montserrat";
-  font-size: 64px; }
+  font-size: 3rem; }
 
 .nav_bar {
   display: grid;
@@ -66,77 +66,49 @@
       margin: 10px; }
       .nav_bar .enlace a:visited {
         color: black; }
-  .nav_bar .search {
-    grid-area: busqueda;
-    display: flex;
-    align-items: center; }
-    .nav_bar .search button {
-      position: flex;
-      width: 200px;
-      height: 30px;
-      border-radius: 25px;
-      background-color: #ff6f00;
-      right: 30px;
-      text-align: center;
-      margin-left: 20px;
-      margin-bottom: 10px;
-      border: none; }
 
-main {
-  grid-area: main;
-  background-color: white; }
-  main .imagenPrincipal {
-    display: grid;
-    width: 100vw;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "img texto";
-    background-color: black; }
-    main .imagenPrincipal .imagenCentral {
-      grid-area: img;
-      width: 66vw;
-      height: auto; }
-    main .imagenPrincipal .textArea {
-      grid-area: texto;
-      background-color: black;
-      width: 33vw;
-      color: white;
-      padding-top: 75px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      main .imagenPrincipal .textArea h2 {
-        color: white;
-        font-size: xxx-large;
-        text-align: center; }
-      main .imagenPrincipal .textArea p {
-        font-size: larger;
-        text-align: justify; }
-      @media (max-width: 576px) {
-        main .imagenPrincipal .textArea {
-          grid-area: img;
-          flex-direction: column;
-          align-items: center;
-          padding-top: 0;
-          padding-bottom: 75px; }
-          main .imagenPrincipal .textArea h2,
-          main .imagenPrincipal .textArea p {
-            text-align: center; } }
-      @media (max-width: 768px) {
-        main .imagenPrincipal .textArea {
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          background-color: transparent;
-          padding: 0; }
-          main .imagenPrincipal .textArea h2,
-          main .imagenPrincipal .textArea p {
-            text-align: center;
-            margin: 10px; } }
+.search {
+  grid-area: busqueda;
+  display: flex;
+  align-items: center; }
+
+.btn {
+  background-color: #ff6f00;
+  width: 150px;
+  border-radius: 50px;
+  color: black;
+  border: none; }
+
+.navbar-toggler {
+  border: none !important; }
+
+.imagenCentral .textArea {
+  background-color: black;
+  justify-content: center;
+  color: white;
+  text-align: center; }
+
+.lista {
+  color: white;
+  list-style: none;
+  background-color: black;
+  font-size: 1.3rem; }
+  .lista .tituloLista {
+    margin-top: 3em; }
+  .lista li {
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: justify;
+    align-items: center; }
+  .lista a {
+    color: white; }
+
+.anuncio {
+  background-color: black;
+  color: white; }
 
 section {
-  width: 100vw;
+  width: auto;
   height: auto;
   grid-area: section;
   background-color: #D9D9D9; }
@@ -144,18 +116,18 @@ section {
 section h3 {
   text-align: center;
   font-family: "montserrat";
-  font-size: 64px;
+  font-size: 2.7rem;
   text-decoration: underline;
   background-color: white; }
 
 .container {
   width: 100%;
-  display: flex;
-  max-width: 1100px; }
+  display: flex; }
 
 .card {
+  justify-content: center;
   width: 100%;
-  margin: 20px;
+  margin: auto;
   border-radius: 6px;
   overflow: hidden;
   background-color: #D9D9D9;
@@ -172,18 +144,18 @@ section h3 {
 h4 {
   text-align: center;
   margin: auto;
-  text-decoration: underline;
   font-size: x-large;
-  color: black; }
+  color: black;
+  font-size: 1.6rem; }
 
 footer {
   grid-area: footer;
   background-color: black;
-  width: 100vw;
+  width: auto;
   height: auto; }
   footer p {
     color: white;
-    font-size: 18px;
+    font-size: 1.3rem;
     text-align: justify;
     font-family: "HP simplified";
     margin-left: 10px; }

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🔈AUDIOMANT🎧</title>
   <!-- Estilos -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="favicon" href="./archivos.img/logo.png">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
@@ -16,7 +16,7 @@
 <body class="grilla">
     <!-- Encabezado -->
     <header class="header_cabecera">
-      <div class="caja1">
+      <div class="caja1 container-fluid">
         <div class="cajaLogo">
           <a href="./index.html"><img class= "logo" src="./archivos.img/logo.png" alt="logo"></a>
         </div>
@@ -24,72 +24,95 @@
         <div></div>
       </div>
         <!-- Navegación -->
-      <nav class="nav_bar">
-        <ul>
-          <!-- Enlaces de navegación -->
-          <li class="enlace"><a href="index.html">Inicio</a></li>
-          <li class="enlace"><a href="./pages/productos.html">Productos</a></li>
-          <li class="enlace"><a href="./pages/servicios.html">Servicios</a></li>
-          <li class="enlace"><a href="./pages/nosotros.html">Nosotros</a></li>
-          <li class="enlace"><a href="./pages/contactos.html">Contactos</a></li>
-        </ul>
-        <!-- Búsqueda -->
-        <div class="search">
-          <i class='bx bx-search'></i>
-          <button>Buscar</button>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Contenido principal -->
-      <div class="imagenPrincipal">
-        <!-- Imagen principal -->
-        <div class="imagenCentral">
-          <img class="imagen" src="./archivos.img/auriculares.png" alt="auriculares">
-        </div>
-        <!-- Area de Texto -->
-        <div class="textArea">
-          <h2>Videojuegos de Alta Fidelidad</h2>  
-          <p>Tome el control de su experiencia de juego y llévela a cotas más altas. Nuestros audífonos ofrecen una impresionante calidad de sonido, comodidad y durabilidad, junto con micrófonos de última generación para una comunicación cristalina dentro del juego</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Productos
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="./pages/productos.html">Productos</a>
+                      <a class="dropdown-item" href="#">Auriculares</a>
+                      <a class="dropdown-item" href="#">Tocadiscos</a>
+                      <a class="dropdown-item" href="#">Microfonos</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="./pages/contactos.html">Contactos</a>
+                  </div>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="buscar" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <main class="imagenCentral">
+      <div>
+        <!-- Contenido principal -->
+        <div class="row no-gutters">
+          <div class="col-lg-8">
+            <img class="img-fluid" src="./archivos.img/AT-LP60XBT_lifestyle_banner_desktop-2000x1000.jpg" alt="Tocadiscos bluetooht">
+          </div>
+        <div class="col-lg-4 textArea text-center">
+          <h2>Videojuegos de Alta Fidelidad</h2>
+                <p>Tome el control de su experiencia de juego y llévela a cotas más altas. Nuestros audífonos ofrecen una impresionante calidad de sonido, comodidad y durabilidad, junto con micrófonos de última generación para una comunicación cristalina dentro del juego</p>
         </div>
       </div>
-
+    
     </main>
     <!-- Sección de productos recomendados -->
-    <section class="section_recomendados">
-      <h3>RECOMENDADOS</h3>
-      <div class="container">
+    <section class="section_recomendados container-fluid">
+      <h3 class="text-center my-5">RECOMENDADOS</h3>
+      <div class="container-fluid">
         <!-- Tarjeta 1 -->
-        <div class="card">
-          <figure>
-            <img src="./archivos.img/ath-m50xbt2_01.png" alt="imagen">
-          </figure>
-          <div class="contenido">
-            <h4>ATH MB50XBT</h4>
-            <p>Auriculares profesionales de monitorización</p>
-            <p>US$ 169,00</p>
+        <div class="row align-content-center">
+          <div class="card col-md-3">
+            <figure>
+              <img class="img-fluid" src="./archivos.img/ath-m50xbt2_01.png" alt="imagen">
+            </figure>
+            <div class="contenido">
+              <h4>ATH MB50XBT</h4>
+              <p>Auriculares profesionales de monitorización</p>
+              <p>US$ 169,00</p>
+            </div>
           </div>
-        </div>
         <!-- Tarjeta 2 -->
-        <div class="card">
-          <figure>
-            <img src="./archivos.img/at-lp60xhp-gm_01.png" alt="imagen">
-          </figure>
-          <div class="contenido">
-            <h4>AT-LP60XHP</h4>
-            <p>Microfono USB de condensador cardioide</p>
-            <p>US$ 129,00</p>
+          <div class="card col-md-3">
+            <figure>
+              <img class="img-fluid" src="./archivos.img/at-lp60xhp-gm_01.png" alt="imagen">
+            </figure>
+            <div class="contenido">
+              <h4>AT-LP60XHP</h4>
+              <p>Microfono USB de condensador cardioide</p>
+              <p>US$ 129,00</p>
+            </div>
           </div>
-        </div>
-        <!-- Tarjeta 3 -->
-        <div class="card">
-          <figure>
-            <img src="./archivos.img/at2020usb_plus_01.png" alt="imagen">
-          </figure>
-          <div class="contenido">
-            <h4>AT2020 USB</h4>
-            <p>Tocadiscos de transmisión por correa totalmente automático</p>
-            <p>US$ 139,00</p>
+          <!-- Tarjeta 3 -->
+          <div class="card col-md-3">
+            <figure>
+              <img class="img-fluid" src="./archivos.img/at2020usb_plus_01.png" alt="imagen">
+            </figure>
+            <div class="contenido">
+              <h4>AT2020 USB</h4>
+              <p>Tocadiscos de transmisión por correa totalmente automático</p>
+              <p>US$ 139,00</p>
+            </div>
           </div>
         </div>
       </div>
@@ -113,11 +136,11 @@
       </p>
       <!-- Iconos de redes sociales -->
       <div class="socialIcons">
-        <i class='bx bx-envelope'></i>
-        <i class='bx bxl-whatsapp'></i>
-        <i class='bx bxl-facebook'></i>
-        <i class='bx bxl-instagram'></i>
-      </div>
+        <a href="mailto:info@audiomant.com.ar"><i class='bx bx-envelope'></i></a>
+        <a href="http://wa.me/+542227464498"><i class='bx bxl-whatsapp' ></i></a>
+        <a href="https://www.facebook.com/Audiomantvivoyhomestudio"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/audiomant.ok/"><i class='bx bxl-instagram' ></i></a>
+    </div>
     </footer>
   <!-- Scripts de JavaScript -->
   <script src="script.js"></script>
